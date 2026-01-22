@@ -47,7 +47,7 @@
         </section>
         <!-- Layout de contenido + sidebar -->
         <section id="Información" aria-labelledby="Titulo-resumen">
-            <header>
+            <header class="container">
                 <h2 id="Titulo-resumen">Resumen rapido</h2>
                 <p>Forsaken es un juego de supervivencia asimetrico donde 10 supervivientes deben completar objetivos 
                     para reducir el tiempo y escapar mientras un asesino intenta asesinarlos, este juego se inspira en la cultura
@@ -55,40 +55,71 @@
                     emblematicos tanto como personas reales como personajes ficticios.
                 </p>
             </header>
-            <div>
-                <!-- Columna principal -->
-                <article aria-labelledby="Titulo-historia">
-                    <h3 id="Titulo-historia">Historia del juego</h3>
-                    <p>Forsaken en su historia es un limbo en el que se encuentran robloxianos importantes para la historia y
-                        creacion de Robloxia, como los administradores, como Shedletsky, Builderman y Dusekkar, personajes reconocibles de juegos 
-                        como Elliot, creaciones originales como Taph y Two Time, historias, como Guest 1337 incluso personas reales que han hecho 
-                        huella en la comunidad de Roblox, para bien o para mal, como 007n7 y c00lkid.
-                    </p>
-                </article>
-                <!-- Sidebar -->
-                <aside aria-labelledby="Titulo-ficha">
-                    <h3 id="Titulo-ficha">Ficha técnica</h3>
-                    <ul>
-                        <li><strong>Nombre:</strong>Noob</li>
-                        <li><strong>Rol:</strong>Superviviente</li>
-                        <li><strong>Vida:</strong>100</li>
-                        <li><strong>Stamina:</strong>100</li>
-                        <li><strong>Habilidad Q:</strong>Bloxycola</li>
-                        <li><strong>Habilidad E:</strong>Slateskin</li>
-                        <li><strong>Habilidad R:</strong>Ghost burguer</li>
-                    </ul>
-                        <section aria-labelledby="Titulo-informacion">
-                            <h4 id="Titulo-informacion">Información</h4>
-                            <ul>
-                                <li>Es el primer sobreviviente que te dan gratis al empezar</li>
-                                <li>La habilidad Bloxycola da velocidad 1 por 3 segundos</li>
-                                <li>La habilidad Slateskin da el efecto Slateskin por 5 segundos, lo que permite no recibir daño
-                                    durante ese tiempo</li>
-                                <li>La habilidad Ghost burguer da invisibilidad e indetectabilidad por 5 segundos</li>
-                                <li></li>
-                            </ul>
-                        </section>
-                </aside>
+            <div class="container">
+                <div class="row">
+                    <!-- Columna principal -->
+                    <article class="col-12 col-md-12" aria-labelledby="Titulo-historia">
+                        <h2 id="Titulo-historia">Historia del juego</h2>
+                        <p>Forsaken en su historia es un limbo en el que se encuentran robloxianos importantes para la historia y
+                            creacion de Robloxia, como los administradores, como Shedletsky, Builderman y Dusekkar, personajes 
+                            reconocibles de juegos como Elliot, creaciones originales como Taph y Two Time, historias, como 
+                            Guest 1337 incluso personas reales que han hecho huella en la comunidad de Roblox, para bien o para 
+                            mal, como 007n7 y c00lkid.
+                        </p>
+                    </article>
+                    <article class="col-12 col-md-8" aria-labelledby="Titulo-personajes">
+                        <h2 id="Titulo-personajes">Personajes</h2>
+                        <p>En Forsaken hay un total de 11 supervivientes y 6 asesinos, cada uno con su propia historia y habilidades
+                            especiales que los hacen unicos en el juego.
+                        </p>
+                        <ul> Supervivientes
+                            <li>Noob</li>
+                            <li>Shedletsky</li>
+                            <li>Elliot</li>
+                            <li>Builderman</li>
+                            <li>007n7</li>
+                            <li>Taph</li>
+                            <li>Guest 1337</li>
+                            <li>Dusekkar</li>
+                            <li>Two time</li>
+                            <li>Chance</li>
+                            <li>Veeronika</li>
+                        </ul>
+                        <ul>
+                            Asesinos
+                            <li>c00lkid</li>
+                            <li>Slasher</li>
+                            <li>Guest 666</li>
+                            <li>Noli</li>
+                            <li>1x1x1x1</li>
+                            <li>John Doe</li>
+                        </ul>
+                    </article>
+                    <!-- Sidebar -->
+                    <aside class="col-12 col-md-4" aria-labelledby="Titulo-ficha">
+                        <h3 id="Titulo-ficha">Ficha técnica</h3>
+                        <ul>
+                            <li><strong>Nombre:</strong>Noob</li>
+                            <li><strong>Rol:</strong>Superviviente</li>
+                            <li><strong>Vida:</strong>100</li>
+                            <li><strong>Stamina:</strong>100</li>
+                            <li><strong>Habilidad Q:</strong>Bloxycola</li>
+                            <li><strong>Habilidad E:</strong>Slateskin</li>
+                            <li><strong>Habilidad R:</strong>Ghost burguer</li>
+                        </ul>
+                            <section aria-labelledby="Titulo-informacion">
+                                <h4 id="Titulo-informacion">Información</h4>
+                                <ul>
+                                    <li>Es el primer sobreviviente que te dan gratis al empezar</li>
+                                    <li>La habilidad Bloxycola da velocidad 1 por 3 segundos</li>
+                                    <li>La habilidad Slateskin da el efecto Slateskin por 5 segundos, lo que permite no recibir daño
+                                        durante ese tiempo</li>
+                                    <li>La habilidad Ghost burguer da invisibilidad e indetectabilidad por 5 segundos</li>
+                                    <li></li>
+                                </ul>
+                            </section>
+                    </aside>
+                </div>
             </div>
         </section>
         <!-- Curiosidades -->
@@ -226,6 +257,8 @@
             <small>2026 Forsaken - fanpage</small>
         </p>
      </footer>
-     <script src="bootstrap 5.3.8/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+     <script src="bootstrap 5.3.8/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js">
+
+     </script>
 </body>
 </html>
