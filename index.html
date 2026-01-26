@@ -9,13 +9,13 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="container">
             <h1>Personajes de Forsaken</h1>
             <p>Sitio informativo sobre el juego Forsaken</p>
-            <a href="#Contenido" aria-label="Ir a contenido principal">
             Ir a contenido principal</a>
+            <a href="#Contenido" aria-label="Ir a contenido principal">
         </div>
-        <nav aria-label="Navegación Principal">
+        <nav class="container" aria-label="Navegación Principal">
             <ul>
                 <li><a href="#Inicio">Inicio</a></li>
                 <li><a href="#Información">Información</a></li>
@@ -28,22 +28,24 @@
     <main id="Contenido">
         <!-- section hero -->
         <section id="Inicio" aria-labelledby="Inicio-Titulo">
-            <header>
-                <h2 id="Inicio-Titulo">Bienvenido al sitio informativo de forsaken</h2>
-                <p>Forsaken es un juego de supervivencia asimetrico de 10 supervivientes y un asesino que pertenece a la plataforma 
-                    de Roblox, en este sitio podras ver la historia de sus personajes y algunas curiosidades.</p>
-                <p>Esta es una pagina hecha por fans que solo recopila informacion oficial del juego.</p>
-            </header>
-            <figure>
-                <img src="img/Captura de pantalla 2026-01-14 103041.png" alt="Forsaken Art" height="575px" width="1200px">
-                <figcaption>
-                    Arte oficial de Forsaken
-                </figcaption>
-            </figure>
-            <p>
-                <a href="#Información">Ir a información</a>
-                <a href="#Contacto">Contactame</a>
-            </p>
+            <div class="container">
+                <header>
+                    <h2 id="Inicio-Titulo">Bienvenido al sitio informativo de forsaken</h2>
+                    <p>Forsaken es un juego de supervivencia asimetrico de 10 supervivientes y un asesino que pertenece a la plataforma 
+                        de Roblox, en este sitio podras ver la historia de sus personajes y algunas curiosidades.</p>
+                    <p>Esta es una pagina hecha por fans que solo recopila informacion oficial del juego.</p>
+                </header>
+                <figure>
+                    <img src="img/Captura de pantalla 2026-01-14 103041.png" alt="Forsaken Art" height="575px" width="1200px">
+                    <figcaption>
+                        Arte oficial de Forsaken
+                    </figcaption>
+                </figure>
+                <p>
+                    <a href="#Información">Ir a información</a>
+                    <a href="#Contacto">Contactame</a>
+                </p>
+            </div>
         </section>
         <!-- Layout de contenido + sidebar -->
         <section id="Información" aria-labelledby="Titulo-resumen">
@@ -93,6 +95,7 @@
                             <li>Noli</li>
                             <li>1x1x1x1</li>
                             <li>John Doe</li>
+                            <li>Nosferatu</li>
                         </ul>
                     </article>
                     <!-- Sidebar -->
@@ -115,7 +118,6 @@
                                     <li>La habilidad Slateskin da el efecto Slateskin por 5 segundos, lo que permite no recibir daño
                                         durante ese tiempo</li>
                                     <li>La habilidad Ghost burguer da invisibilidad e indetectabilidad por 5 segundos</li>
-                                    <li></li>
                                 </ul>
                             </section>
                     </aside>
@@ -124,123 +126,140 @@
         </section>
         <!-- Curiosidades -->
         <section id="Curiosidades" aria-labelledby="Titulo-curiosidades">
-            <header>
-                <h2 id="Titulo-curiosidades">Curiosidades de los personajes</h2>
-            </header>
-            <div>
-                <article>
-                    <h3>Noob</h3>
-                    <p>
-                        <li>Noob era amigo de Guest 666</li>
-                        <li>A Noob le encanta la Bloxycola</li>
-                        <li>Es genero fluido</li>
-                    </p>
-                </article>
-                <article>
-                    <h3>Shedletsky</h3>
-                    <p>
-                        <li>Fundo Robloxia junto a Builderman y Dusekkar</li>
-                        <li>Esta casado con Brigtheyes</li>
-                        <li>Le encanta el pollo frito</li>
-                        <li>Es de los pocos sobrevivientes que no le tienen miedo a los asesinos</li>
-                    </p>
-                </article>
+            <div class="container">
+                <header>
+                    <h2 id="Titulo-curiosidades">Curiosidades de los personajes</h2>
+                </header>
+                <div>
+                    <article>
+                        <h3>Noob</h3>
+                        <p>
+                            <li>Noob era amigo de Guest 666</li>
+                            <li>A Noob le encanta la Bloxycola</li>
+                            <li>Es genero fluido</li>
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Shedletsky</h3>
+                        <p>
+                            <li>Fundo Robloxia junto a Builderman y Dusekkar</li>
+                            <li>Esta casado con Brigtheyes</li>
+                            <li>Le encanta el pollo frito</li>
+                            <li>Es de los pocos sobrevivientes que no le tienen miedo a los asesinos</li>
+                        </p>
+                    </article>
+                    <article>
+                        <h3>Elliot</h3>
+                        <p>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </p>
+                    </article>
+                </div>
             </div>
         </section>
          <!-- Galería -->
         <section id="Galería" aria-labelledby="Titulo-galeria">
-            <header>
-                <h2 id="Titulo-galeria">Galería de Imágenes</h2>
-            </header>
-            <div>
-                <figure>
-                    <img src="img/Noobrender.webp" height="400" width="375" alt="Render de Noob">
-                    <figcaption>
-                        Render oficial de Noob
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/NoobMilestone1.png" alt="Noob Milestone 1">
-                    <figcaption>
-                        Noob Milestone 1
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/NoobMilestone2.png" alt="Noob Milestone 2">
-                    <figcaption>
-                        Noob Milestone 2
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/NoobMilestone3.png" alt="Noob Milestone 3">
-                    <figcaption>
-                        Noob Milestone 3
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="img/NoobMilestone4.png" alt="Noob Milestone 4" height="400" width="375">
-                    <figcaption>
-                        Noob Milestone 4
-                    </figcaption>
+            <div class="container">
+                <header>
+                    <h2 id="Titulo-galeria">Galería de Imágenes</h2>
+                </header>
+                <div>
+                    <figure>
+                            <img src="img/Noobrender.webp" height="400" width="375" alt="Render de Noob">
+                            <figcaption>
+                                Render oficial de Noob
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/NoobMilestone1.png" alt="Noob Milestone 1">
+                            <figcaption>
+                                Noob Milestone 1
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/NoobMilestone2.png" alt="Noob Milestone 2">
+                            <figcaption>
+                                Noob Milestone 2
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/NoobMilestone3.png" alt="Noob Milestone 3">
+                            <figcaption>
+                                Noob Milestone 3
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/NoobMilestone4.png" alt="Noob Milestone 4" height="400" width="375">
+                        <figcaption>
+                            Noob Milestone 4
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
             <!-- FAQ con details -->
             <section ID="faq" aria-labelledby="Titulo-faq">
-                <header>
-                    <h2 id="Titulo-faq">
-                        Preguntas Frecuentes
-                    </h2>
-                </header>
-                <details>
-                    <summary>¿Cómo puedo desbloquear nuevos personajes?</summary>
-                    <p>Puedes desbloquear nuevos personajes comprándolos con la moneda del juego.</p>
-                </details>
-                <details>
-                    <summary>¿Qué hago si encuentro un error en el juego?</summary>
-                    <p>Si encuentras un error, reportalo al equipo de soporte de Forsaken a través de su página oficial.</p>
-                </details>
-                <details>
-                    <summary>¿Hay eventos especiales en Forsaken?</summary>
-                    <p>Sí, Forsaken organiza eventos durente festividades y eventos importantes.</p>
-                </details>
+                <div class="container">
+                    <header>
+                        <h2 id="Titulo-faq">
+                            Preguntas Frecuentes
+                        </h2>
+                    </header>
+                    <details>
+                        <summary>¿Cómo puedo desbloquear nuevos personajes?</summary>
+                        <p>Puedes desbloquear nuevos personajes comprándolos con la moneda del juego.</p>
+                    </details>
+                    <details>
+                        <summary>¿Qué hago si encuentro un error en el juego?</summary>
+                        <p>Si encuentras un error, reportalo al equipo de soporte de Forsaken a través de su página oficial.</p>
+                    </details>
+                    <details>
+                        <summary>¿Hay eventos especiales en Forsaken?</summary>
+                        <p>Sí, Forsaken organiza eventos durente festividades y eventos importantes.</p>
+                    </details>
+                </div>
             </section>
             <!-- Contacto -->
             <section id="Contacto" aria-labelledby="Titulo-contacto">
-                <header>
-                    <h2 id="Titulo-contacto">Contacto</h2>
-                    <p>Si tienes alguna pregunta o sugerencia, contactame a traves de mi correo electronico:</p>
-                    <address>
-                        <a href="mailto:gamaliel.alexisab@gmail.com">Mi contacto</a>
-                </header>
-                <form action="#" method="post">
-                    <fieldset>
-                        <legend>Escribe tu mensaje</legend>
-                        <p>
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" required>
-                        </p>
-                        <p>
-                            <label for="email">Correo Electrónico:</label>
-                            <input type="email" id="email" name="email" required>
-                        </p>
-                        <p>
-                            <label for="tema">Tema</label> <br>
-                            <select id="tema" name="tema">
-                                <option value="consulta">Consulta</option>
-                                <option value="sugerencia">Sugerencia</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                        </p>
-                        <p>
-                            <label for="mensaje">Mensaje</label><br>
-                            <textarea id="mensaje" name="mensaje" rows="10" cols="30" required></textarea>
-                        </p>
-                        <p>
-                            <button type="submit">Enviar mensaje</button>
-                            <button type="reset">Limpiar</button>
-                        </p>
-                    </fieldset>
-                </form>
+                <div class="container">
+                    <header>
+                        <h2 id="Titulo-contacto">Contacto</h2>
+                        <p>Si tienes alguna pregunta o sugerencia, contactame a traves de mi correo electronico:</p>
+                        <address>
+                            <a href="mailto:gamaliel.alexisab@gmail.com">Mi contacto</a>
+                    </header>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Escribe tu mensaje</legend>
+                            <p>
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </p>
+                            <p>
+                                <label for="email">Correo Electrónico:</label>
+                                <input type="email" id="email" name="email" required>
+                            </p>
+                            <p>
+                                <label for="tema">Tema</label> <br>
+                                <select id="tema" name="tema">
+                                    <option value="consulta">Consulta</option>
+                                    <option value="sugerencia">Sugerencia</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="mensaje">Mensaje</label><br>
+                                <textarea id="mensaje" name="mensaje" rows="10" cols="30" required></textarea>
+                            </p>
+                            <p>
+                                <button type="submit">Enviar mensaje</button>
+                                <button type="reset">Limpiar</button>
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
             </section>
     </main>
     <!-- Pie de página -->
@@ -258,6 +277,7 @@
         </p>
      </footer>
      <script src="bootstrap 5.3.8/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js">
+
 
      </script>
 </body>
