@@ -17,13 +17,25 @@
         </div>
         <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Navegación Principal">
             <div class="container">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#Inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Información">Información</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Curiosidades">Curiosidades</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Galería">Galería</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
-                </ul>
+                <button 
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Mostrar u ocultar menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-colapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#Inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Información">Información</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Curiosidades">Curiosidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Galería">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -265,6 +277,9 @@
                                 <button type="reset">Limpiar</button>
                             </p>
                         </fieldset>
+       
+       
+       
                     </form>
                 </div>
             </section>
@@ -284,8 +299,6 @@
         </p>
      </footer>
      <script src="bootstrap 5.3.8/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js">
-
-
      </script>
 </body>
 </html>
