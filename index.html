@@ -307,40 +307,43 @@
             </section>
             <!-- Contacto -->
             <section id="Contacto" aria-labelledby="Titulo-contacto">
-                <div class="container">
-                    <header>
+                <div class="container py-5">
+                    <header class="mb-4">
                         <h2 id="Titulo-contacto">Contacto</h2>
-                        <p>Si tienes alguna pregunta o sugerencia, contactame a traves de mi correo electronico:</p>
+                        <p class="text-muted">Si tienes alguna pregunta o sugerencia, contactame a traves de mi correo electronico:</p>
                         <address>
                             <a href="mailto:gamaliel.alexisab@gmail.com">Mi contacto</a>
+                        </address>
                     </header>
                     <form action="#" method="post">
                         <fieldset>
                             <legend>Escribe tu mensaje</legend>
-                            <p>
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" id="nombre" name="nombre" required>
-                            </p>
-                            <p>
-                                <label for="email">Correo Electrónico:</label>
-                                <input type="email" id="email" name="email" required>
-                            </p>
-                            <p>
-                                <label for="tema">Tema</label> <br>
-                                <select id="tema" name="tema">
-                                    <option value="consulta">Consulta</option>
-                                    <option value="sugerencia">Sugerencia</option>
-                                    <option value="otro">Otro</option>
-                                </select>
-                            </p>
-                            <p>
-                                <label for="mensaje">Mensaje</label><br>
-                                <textarea id="mensaje" name="mensaje" rows="10" cols="30" required></textarea>
-                            </p>
-                            <p>
-                                <button type="submit">Enviar mensaje</button>
-                                <button type="reset">Limpiar</button>
-                            </p>
+                            <div class="row g-3">
+                                <div class="col-12 col-md-6">
+                                    <label for="nombre" class="form-label">Nombre:</label>
+                                    <input type="text" id="nombre" name="nombre" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="email" class="form-label">Correo Electrónico:</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="tema" class="form-label">Tema</label> <br>
+                                    <select id="tema" name="tema" class="form-select">
+                                        <option value="consulta">Consulta</option>
+                                        <option value="sugerencia">Sugerencia</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensaje" class="form-label">Mensaje</label><br>
+                                    <textarea id="mensaje" name="mensaje" rows="10" class="form-control" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary me-2">Enviar mensaje</button>
+                                    <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
+                                </div>
+                            </div>
                         </fieldset>
        
        
