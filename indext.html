@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Realidad Virtual y Aumentada — Sitio educativo</title>
+    <meta name="description" content="Sitio ficticio para practicar HTML semántico y luego aplicar Bootstrap con RV y RA." />
+    <link rel="stylesheet" href="bootstrap 5.3.8/bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Realidad Virtual y Aumentada</h1>
+            <p>Guía educativa para practicar estructura semántica y luego transformar el layout con Bootstrap.</p>
+            <a href="#contenido" aria-label="Saltar al contenido principal">Saltar al contenido</a>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Navegación principal">
+            <div class="container">
+                <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Alternar navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#conceptos">Conceptos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#aplicaciones">Aplicaciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <!-- Hero -->
+        <section id="inicio" aria-labelledby="titulo-inicio">
+            <div class="container py-5">
+                <header class="mb-4">
+                    <h2 id="titulo-inicio" class="display-5 fw-bold">Aprende RV y RA paso a paso</h2>
+                    <p class="lead">Un sitio ficticio para practicar grid, cards, navbar, formularios y componentes responsivos.</p>
+                </header>
+
+                <figure class="mb-4">
+                    <img src="https://via.placeholder.com/1200x450" 
+                    alt="Persona usando visor de realidad virtual (placeholder)" 
+                    class="img-fluid rounded" />
+                    <figcaption>Imagen de ejemplo (placeholder) para practicar responsive.</figcaption>
+                </figure>
+
+                <p>
+                    <a href="#conceptos" class="btn btn-primary me-2">Ver conceptos</a>
+                    <a href="#contacto" class="btn btn-secondary">Unirme al boletín</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Layout contenido + sidebar -->
+        <section id="conceptos" aria-labelledby="titulo-resumen">
+            <header class="container">
+                <h2 id="titulo-resumen">Resumen rápido</h2>
+                <p>Estructura ideal para aplicar grid: contenido principal + información complementaria.</p>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <article class="col-12 col-md-8" aria-labelledby="titulo-diferencias">
+                        <h3 id="titulo-diferencias">RV vs RA</h3>
+                        <p><strong>Realidad Virtual (RV):</strong> crea un entorno digital inmersivo que reemplaza lo que ves.</p>
+                        <p><strong>Realidad Aumentada (RA):</strong> superpone información digital sobre el mundo real.</p>
+                        <section aria-labelledby="titulo-requisitos">
+                            <h4 id="titulo-requisitos">Requisitos básicos</h4>
+                            <ul>
+                            <li>Dispositivo (móvil/PC/visor)</li>
+                            <li>Sensores (cámara, giroscopio, profundidad)</li>
+                            <li>Contenido 3D y UX adecuada</li>
+                            </ul>
+                        </section>
+                    </article>
+
+                    <aside class="col-12 col-md-4" aria-labelledby="titulo-glosario">
+                    <h3 id="titulo-glosario">Glosario express</h3>
+                    <ul>
+                        <li><strong>Tracking:</strong> seguimiento de movimiento</li>
+                        <li><strong>FOV:</strong> campo de visión</li>
+                        <li><strong>Anchors:</strong> puntos en el entorno para colocar objetos RA</li>
+                        <li><strong>Latencia:</strong> retraso entre acción y respuesta</li>
+                    </ul>
+                    <section aria-labelledby="titulo-dato">
+                        <h4 id="titulo-dato">Dato clave</h4>
+                        <p>Menor latencia suele mejorar la sensación de presencia e interacción.</p>
+                    </section>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conceptos (cards después) -->
+        <section id="conceptos" aria-labelledby="titulo-conceptos">
+            <div class="container py-5">
+                <header class="mb-4">
+                    <h2 id="titulo-conceptos">Conceptos esenciales</h2>
+                    <p>Sección perfecta para convertir en “cards” y grid responsivo.</p>
+                </header>
+                <div class="row g-3">
+                    <article class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm transition">
+                            <div class="card-body">            
+                                <h3>Inmersión</h3>
+                                <p>Qué tan “dentro” se siente el usuario del entorno (RV) o la experiencia (RA).</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm transition">
+                            <div class="card-body">            
+                                <h3>Interacción</h3>
+                                <p>Gestos, controladores, voz o manos para manipular objetos y UI.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-md-4">
+                        <div class="card h-100 shadow-sm transition">
+                            <div class="card-body">            
+                                <h3>UX y seguridad</h3>
+                                <p>Diseño claro, límites físicos, accesibilidad y prevención de mareos.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aplicaciones (grid de 2 columnas luego) -->
+        <section id="aplicaciones" aria-labelledby="titulo-aplicaciones">
+            <div class="container py-5">
+                <header class="mb-4">
+                    <h2 id="titulo-aplicaciones">Aplicaciones</h2>
+                    <p>Casos de uso para practicar listas, badges y layout.</p>
+                </header>
+            </div>
+        </section>
+        <section aria-labelledby="titulo-industria">
+            <div class="container py-5">
+                <h3 id="titulo-industria">Industria</h3>
+                <ul>
+                    <li>Capacitación y simulación</li>
+                    <li>Mantenimiento asistido (RA)</li>
+                    <li>Prototipado y diseño</li>
+                </ul>
+            </div>
+        </section>
+        <section aria-labelledby="titulo-educacion">
+            <div class="container py-5">
+                <h3 id="titulo-educacion">Educación</h3>
+                <ul>
+                    <li>Laboratorios virtuales</li>
+                    <li>Visitas inmersivas</li>
+                    <li>Aprendizaje interactivo con RA</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Equipo recomendado (lista / cards) -->
+        <section id="equipo" aria-labelledby="titulo-equipo">
+            <div class="container py-5">
+                <header class="mb-4">
+                    <h2 id="titulo-equipo">Equipo recomendado</h2>
+                    <p>Ideal para practicar tablas, list groups o cards.</p>
+                </header>
+            </div>    
+
+            <div class="row g-3">
+                <article class="col-12 col-md-6">
+                    <div class="card h-100 shadow-sm transition">
+                        <div class="card-body">
+                            <h3 class="card-title h4">Para RV</h3>
+                            <ul class="card-text">
+                                <li>Visor</li>
+                                <li>Controladores</li>
+                                <li>Espacio seguro</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6">
+                    <div class="card h-100 shadow-sm transition">
+                        <div class="card-body">
+                            <h3 class="card-title h4">Para RA</h3>
+                            <ul class="card-text">
+                                <li>Smartphone / tablet con buena cámara</li>
+                                <li>Iluminación adecuada</li>
+                                <li>Superficies con textura para tracking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Galería -->
+        <section id="galeria" aria-labelledby="titulo-galeria">
+            <div class="container py-5">
+                <header class="mb-4">
+                    <h2 id="titulo-galeria">Galería</h2>
+                    <p>Convierte esto en un grid responsivo de imágenes.</p>
+                </header>            
+                <div class="row g-3">
+                    <figure class="col-12 col-md-4">
+                        <img src="https://via.placeholder.com/400x300" 
+                        alt="Interfaz flotante en realidad aumentada (placeholder)" 
+                        class="img-fluid rounded" />
+                        <figcaption>RA: UI sobre el entorno</figcaption>
+                    </figure>
+                    <figure class="col-12 col-md-4">
+                        <img src="https://via.placeholder.com/400x300" 
+                        alt="Entorno virtual inmersivo (placeholder)" 
+                        class="img-fluid rounded"/>
+                        <figcaption>RV: entorno inmersivo</figcaption>
+                    </figure>
+                    <figure class="col-12 col-md-4">
+                        <img src="https://via.placeholder.com/400x300" 
+                        alt="Persona interactuando con objetos 3D (placeholder)" 
+                        class="img-fluid rounded"/>
+                        <figcaption>Interacción 3D</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" aria-labelledby="titulo-faq">
+            <div class="container py-5">
+                <header class="mb-4">
+                    <h2 id="titulo-faq">Preguntas frecuentes</h2>
+                </header>
+
+                <details class="border rounded p-3 mb-3 shadow-sm">
+                    <summary class="fw-semibold">¿Qué diferencia principal hay entre RV y RA?</summary>
+                    <p class="mt-2 mb-0 text-muted">RV reemplaza el entorno visual; RA lo complementa con elementos digitales.</p>
+                </details>
+
+                <details class="border rounded p-3 mb-3 shadow-sm">
+                    <summary class="fw-semibold">¿Qué se necesita para empezar?</summary>
+                    <p class="mt-2 mb-0 text-muted">Un dispositivo compatible y un objetivo claro: aprender, simular, entrenar o prototipar.</p>
+                </details>
+
+                <details class="border rounded p-3 mb-3 shadow-sm">
+                    <summary class="fw-semibold">¿Cómo se evita el mareo en RV?</summary>
+                    <p class="mt-2 mb-0 text-muted">Buena tasa de refresco, baja latencia y diseño de movimiento cuidadoso.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" aria-labelledby="titulo-contacto">
+            <div class="container py-5">
+                <header class="mb-4">
+                    <h2 id="titulo-contacto">Contacto</h2>
+                    <p class="text-muted">Formulario para practicar Bootstrap (grid, forms, botones).</p>
+                </header>
+
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Escríbenos</legend>
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input id="nombre" name="nombre" type="text" class="form-control" autocomplete="name" required />
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="email" class="form-label">Correo</label>
+                                <input id="email" name="email" type="email" class="form-control" autocomplete="email" required />
+                            </div>
+                            <div class="col-12 col-md-6">                        
+                                <label for="tema">Tema</label><br />
+                                <select id="tema" name="tema">
+                                    <option value="rv">Realidad virtual</option>
+                                    <option value="ra">Realidad aumentada</option>
+                                    <option value="ux">UX / accesibilidad</option>
+                                    <option value="otros">Otro</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="mensaje">Mensaje</label><br />
+                                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <button type="submit">Enviar</button>
+                                <button type="reset">Limpiar</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+        </section>
+    </main>
+
+  <footer class="bg-light mt-5">
+    <div class="container py-4">
+        <div class="row g-3 align-items-center">
+            <nav class="col-12 col-md-6" aria-label="Enlaces del pie">
+                <ul class="list-unstyled mb-0">
+                  <li><a href="#inicio" class="text-decoration-none">Volver arriba</a></li>
+                  <li><a href="#contacto" class="text-decoration-none">Contacto</a></li>
+                  <li><a href="#faq" class="text-decoration-none">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="col-12 col-md-6 text-md-end">
+                <small class="text-muted">© 2026 Realidad Virtual y Aumentada (sitio ficticio). Hecho para fines educativos.</small>
+            </div>
+        </div>
+    </div>               
+  </footer>
+    <script src="bootstrap 5.3.8/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>

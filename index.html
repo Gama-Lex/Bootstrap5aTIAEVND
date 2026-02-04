@@ -6,14 +6,15 @@
     <title>Datos sobre los personajes de Fosaken</title>
     <meta name="description" content="Historia y curiosidades sobre sobreviventes y asesinos en Forsaken"/>
     <link rel="stylesheet" href="bootstrap 5.3.8/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css"/>
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Personajes de Forsaken</h1>
             <p>Sitio informativo sobre el juego Forsaken</p>
-            Ir a contenido principal</a>
-            <a href="#Contenido" aria-label="Ir a contenido principal">
+            <a class="btn btn-outline-primary me-2 shadow-sm" href="#Contenido" aria-label="Ir a contenido principal">
+                Ir a contenido principal</a>
         </div>
         <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="Navegación Principal">
             <div class="container">
@@ -27,13 +28,15 @@
                 aria-label="Mostrar u ocultar menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-colapse" id="menuPrincipal">
+                <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#Inicio">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Información">Información</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Curiosidades">Curiosidades</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Galería">Galería</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
+                        <li class="nav-item"><a href="#Inicio" class="btn btn-primary me-2 shadow-sm">Inicio</a></li>
+                        <li class="nav-item"><a href="#Información" class="btn btn-info me-2 shadow-sm">Información</a></li>
+                        <li class="nav-item"><a href="#Curiosidades" class="btn btn-warning me-2 shadow-sm">Curiosidades</a></li>
+                        <li class="nav-item"><a href="#Galería" class="btn btn-success me-2 shadow-sm">Galería</a></li>
+                        <li class="nav-item"><a href="#faq" class="btn btn-dark me-2 shadow-sm">FAQ</a></li>
+                        <li class="nav-item"><a href="#Contacto" class="btn btn-danger me-2 shadow-sm">Contacto</a></li>
+                        <!-- ✔️primary, ✔️info, ✔️warning, ✔️danger, ✔️dark, ligth, ✔️success, secondary,  -->
                     </ul>
                 </div>
             </div>
@@ -47,7 +50,7 @@
                     <h2 id="Inicio-Titulo" class="display-5 fw-bold">El mundo de forsaken</h2>
                     <p class="lead">Forsaken es un juego de supervivencia asimetrico de 10 supervivientes y un asesino que 
                         pertenece a la plataforma de Roblox, en este sitio podras ver la historia de sus personajes y algunas 
-                        curiosidades.
+                        curiosidades.</p>
                     <p class="lead">Esta es una pagina hecha por fans que solo recopila informacion oficial del juego.</p>
                 </header>
                 <figure class="mb-4">
@@ -61,8 +64,8 @@
                     </figcaption>
                 </figure>
                 <p>
-                    <a href="#Información" class="btm btn-primary me-2">Ir a información</a>
-                    <a href="#Contacto" class="btn btn-secondary">Contactame</a>
+                    <a href="#Información" class="btn btn-primary me-2">Ir a información</a>
+                    <a href="#Contacto" class="btn btn-outline-primary">Contactame</a>
                 </p>
             </div>
         </section>
@@ -91,8 +94,8 @@
                     </article>
                     <article class="col-12 col-md-8" aria-labelledby="Titulo-personajes">
                         <h2 id="Titulo-personajes">Personajes</h2>
-                        <p>En Forsaken hay un total de 11 supervivientes y 6 asesinos, cada uno con su propia historia y habilidades
-                            especiales que los hacen unicos en el juego.
+                        <p>En Forsaken hay un total de 11 supervivientes y 6 asesinos, cada uno con su propia historia y 
+                            habilidades especiales que los hacen unicos en el juego.
                         </p>
                         <ul> 
                             <h5>Supervivientes</h5>
@@ -183,7 +186,7 @@
                 </header>
                 <div class="row g-3">
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <h3 class="card-tittle h4">Noob</h3>
                                 <p class="card-text">
@@ -196,7 +199,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <h3 class="card-tittle h4">Shedletsky</h3>
                                 <p class="card-text">
@@ -209,12 +212,12 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <h3 class="card-tittle h4">Elliot</h3>
                                 <p class="card-text">
-                                    <li>Trabajaba en Builder Brothers Pizza de la experiencia work at a pizza place antes de llegar al 
-                                        Forsaken</li>
+                                    <li>Trabajaba en Builder Brothers Pizza de la experiencia work at a pizza place antes de llegar 
+                                        al Forsaken</li>
                                     <li>Tiene una hermanita que quiere mucho, cuando descansaba sse dejaba poner accesorios por ella</li>
                                     <li>Seguido se pregunta que estara haciendo su familia sin el, en especial su hermana</li>
                                     <li>El es el que mas trabaja en la pizzeria</li>
@@ -224,7 +227,7 @@
                         </div>
                     </article>
                     <article class="col-12 col-md-4">
-                        <div class="card h-100">
+                        <div class="card h-100 shadow-sm transition">
                             <div class="card-body">
                                 <h3 class="card-tittle h4">Builderman</h3>
                                 <p class="card-text">
@@ -248,113 +251,129 @@
                 </header>
                 <div clas="row g-3">
                     <figure class="col-12 col-sm-6 col-md-4">
-                            <img src="img/Noobrender.webp" 
-                            alt="Render de Noob" 
-                            class="img-fluid rounded"
-                            height="400" 
-                            width="375">
-                            <figcaption class="mt-2 text center">
-                                Render oficial de Noob
-                            </figcaption>
+                        <img 
+                        src="img/Noobrender.webp" 
+                        alt="Render de Noob" 
+                        class="img-fluid rounded shadow-sm transition"
+                        height="300" 
+                        width="300">
+                        <figcaption class="mt-2 text-center">
+                            Render oficial de Noob
+                        </figcaption>
                     </figure>
                     <figure class="col-12 col-sm-6 col-md-4">
-                        <img src="img/NoobMilestone1.png" alt="Noob Milestone 1" class="img-fluid rounded">
-                        <figcaption class="mt-2 text center">
+                        <img src="img/NoobMilestone1.png" 
+                        alt="Noob Milestone 1" 
+                        class="img-fluid rounded shadow-sm transition"
+                        height="300"
+                        width="300">
+                        <figcaption class="mt-2 text-center">
                             Noob Milestone 1
                         </figcaption>
                     </figure>
                     <figure class="col-12 col-sm-6 col-md-4">
-                         <img src="img/NoobMilestone2.png" alt="Noob Milestone 2" class="img-fluid rounded">
-                        <figcaption class="mt-2 text center">
+                        <img src="img/NoobMilestone2.png"  
+                        alt="Noob Milestone 2" 
+                        class="img-fluid rounded shadow-sm transition"
+                        height="300"
+                        width="300">
+                        <figcaption class="mt-2 text-center">
                             Noob Milestone 2
                         </figcaption>
                     </figure>
-                    <!-- <figure class="col-12 col-sm-6 col-md-4">
-                        <img src="img/NoobMilestone3.png" alt="Noob Milestone 3" class="img-fluid rounded">
-                        <figcaption class="mt-2 text center">
+                    <figure class="col-12 col-sm-6 col-md-4">
+                        <img 
+                        src="img/NoobMilestone3.png" 
+                        alt="Noob Milestone 3" 
+                        class="img-fluid rounded shadow-sm transition"
+                        height="300"
+                        width="300">
+                        <figcaption class="mt-2 text-center">
                             Noob Milestone 3
                         </figcaption>
                     </figure>
                     <figure class="col-12 col-sm-6 col-md-4">
-                        <img src="img/NoobMilestone4.png" alt="Noob Milestone 4" height="400" width="375" class="img-fluid rounded">
-                        <figcaption class="mt-2 text center">
+                        <img src="img/NoobMilestone4.png" 
+                        alt="Noob Milestone 4" 
+                        height="300" 
+                        width="300" 
+                        class="img-fluid rounded shadow-sm transition">
+                        <figcaption class="mt-2 text-center">
                             Noob Milestone 4
                         </figcaption>
-                    </figure> -->
+                    </figure>
                 </div>
             </div>
         </section>
-            <!-- FAQ con details -->
-            <section id="faq" aria-labelledby="Titulo-faq">
-                <div class="container py-5">
-                    <header class="mb-4">
-                        <h2 id="Titulo-faq">
-                            Preguntas Frecuentes
-                        </h2>
-                    </header>
-                    <details class="border rounded p-3 mb-3">
-                        <summary class="fw-semibold">¿Cómo puedo desbloquear nuevos personajes?</summary>
-                        <p class="mt-2 mb-0 text-muted">Puedes desbloquear nuevos personajes comprándolos con la moneda del juego.</p>
-                    </details>
-                    <details class="border rounded p-3 mb-3">
-                        <summary class="fw-semibold">¿Qué hago si encuentro un error en el juego?</summary>
-                        <p class="mt-2 mb-0 text-muted">Si encuentras un error, reportalo al equipo de devs de Forsaken a través de sus cuentas oficiales.</p>
-                    </details>
-                    <details class="border rounded p-3 mb-3">
-                        <summary class="fw-semibold">¿Hay eventos especiales en Forsaken?</summary>
-                        <p class="mt-2 mb-0 text-muted">Sí, Forsaken organiza eventos durante festividades y eventos importantes.</p>
-                    </details>
-                </div>
-            </section>
-            <!-- Contacto -->
-            <section id="Contacto" aria-labelledby="Titulo-contacto">
-                <div class="container py-5">
-                    <header class="mb-4">
-                        <h2 id="Titulo-contacto">Contacto</h2>
-                        <p class="text-muted">Si tienes alguna pregunta o sugerencia, contactame a traves de mi correo electronico:</p>
-                        <address>
-                            <a href="mailto:gamaliel.alexisab@gmail.com">Mi contacto</a>
-                        </address>
-                    </header>
-                    <form action="#" method="post">
-                        <fieldset>
-                            <legend>Escribe tu mensaje</legend>
-                            <div class="row g-3">
-                                <div class="col-12 col-md-6">
-                                    <label for="nombre" class="form-label">Nombre:</label>
-                                    <input type="text" id="nombre" name="nombre" required>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <label for="email" class="form-label">Correo Electrónico:</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <label for="tema" class="form-label">Tema</label> <br>
-                                    <select id="tema" name="tema" class="form-select">
-                                        <option value="consulta">Consulta</option>
-                                        <option value="sugerencia">Sugerencia</option>
-                                        <option value="otro">Otro</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <label for="mensaje" class="form-label">Mensaje</label><br>
-                                    <textarea id="mensaje" name="mensaje" rows="10" class="form-control" required></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary me-2">Enviar mensaje</button>
-                                    <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
-                                </div>
+        <!-- FAQ con details -->
+        <section id="faq" aria-labelledby="Titulo-faq">
+            <div class="container py-5">
+                <header class="mb-4">
+                    <h2 id="Titulo-faq">
+                        Preguntas Frecuentes
+                    </h2>
+                </header>
+                <details class="border rounded p-3 mb-3 shadow-sm">
+                    <summary class="fw-semibold">¿Cómo puedo desbloquear nuevos personajes?</summary>
+                    <p class="mt-2 mb-0 text-muted">Puedes desbloquear nuevos personajes comprándolos con la moneda del juego.</p>
+                </details>
+                <details class="border rounded p-3 mb-3 shadow-sm">
+                    <summary class="fw-semibold">¿Qué hago si encuentro un error en el juego?</summary>
+                    <p class="mt-2 mb-0 text-muted">Si encuentras un error, reportalo al equipo de devs de Forsaken a través de 
+                        sus cuentas oficiales.</p>
+                </details>
+                <details class="border rounded p-3 mb-3 shadow-sm">
+                    <summary class="fw-semibold">¿Hay eventos especiales en Forsaken?</summary>
+                    <p class="mt-2 mb-0 text-muted">Sí, Forsaken organiza eventos durante festividades y eventos importantes.</p>
+                </details>
+            </div>
+        </section>
+        <!-- Contacto -->
+        <section id="Contacto" aria-labelledby="Titulo-contacto">
+            <div class="container py-5">
+                <header class="mb-4">
+                    <h2 id="Titulo-contacto">Contacto</h2>
+                    <p class="text-muted">Si tienes alguna pregunta o sugerencia, contactame a traves de mi correo electronico:</p>
+                    <address>
+                        <a href="mailto:gamaliel.alexisab@gmail.com">Mi contacto</a>
+                    </address>
+                </header>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Escribe tu mensaje</legend>
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
                             </div>
-                        </fieldset>
-       
-       
-       
-                    </form>
-                </div>
-            </section>
+                            <div class="col-12 col-md-6">
+                                <label for="email" class="form-label">Correo Electrónico:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="tema" class="form-label">Tema</label> <br>
+                                <select id="tema" name="tema" class="form-select">
+                                    <option value="consulta">Consulta</option>
+                                    <option value="sugerencia">Sugerencia</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="mensaje" class="form-label">Mensaje</label><br>
+                                <textarea id="mensaje" name="mensaje" rows="10" class="form-control" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary me-2">Enviar mensaje</button>
+                                <button type="reset" class="btn btn-outline-secondary">Limpiar</button>
+                            </div>
+                        </div>
+                    </fieldset>      
+                </form>
+            </div>
+        </section>
     </main>
     <!-- Pie de página -->
-     <footer class="bg-light mt-5">
+    <footer class="bg-dark mt-5">
         <div class="container py-4">
             <div class="row g-3 align-items-center">
                 <nav class="col-12 col-md-6" aria-labelledby="enlaces del footer">
@@ -370,8 +389,8 @@
                 </div>
             </div>
         </div>
-     </footer>
-     <script src="bootstrap 5.3.8/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js">
-     </script>
+    </footer>
+    <script src="bootstrap 5.3.8/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js">
+    </script>
 </body>
 </html>
